@@ -1,0 +1,52 @@
+plugins {
+	id 'java'
+	id 'application'
+}
+
+ext {
+	buildId = System.currentTimeMillis()
+	codinGameMainClass = "com.crio.codingame.App"
+	jukeBoxMainClass = "com.crio.jukebox.App"
+}
+
+// Replace the mainClass variable with jukeBoxMainClass to only run the JukeBox Application.
+// Revert back to codinGameMainClass to only run the CodingGame Application.
+application {
+    mainClass = codinGameMainClass
+}
+
+group = 'com.crio'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	testImplementation 'org.mockito:mockito-junit-jupiter:3.11.1'
+	testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+}
+
+test {
+	reports {
+		junitXml.enabled = true
+		def destinationDirectory = System.getProperty("user.home") + "/.gradle/daemon/${buildId}/test-results"
+		junitXml.destination = file(destinationDirectory)
+		html.enabled = true
+	}
+	useJUnitPlatform {
+	}
+	testLogging.events ("STANDARD_ERROR")
+	testLogging.events ("STANDARD_OUT")
+	afterSuite { desc, result ->
+		if (!desc.parent) {
+			println "\nTEST RESULT: ${result.resultType}"
+			println "TEST SUMMARY: RAN ${result.testCount} TESTS, " +
+					"${result.successfulTestCount} SUCCEEDED, " +
+					"${result.failedTestCount} FAILED, " +
+					"${result.skippedTestCount} SKIPPED"
+		}
+	}
+}
+
