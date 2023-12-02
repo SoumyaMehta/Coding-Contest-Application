@@ -1,7 +1,5 @@
 # Object_Modeling
 
-![c495b2a5-b525-4a6b-bd2c-8fa4008cdcf1](https://user-images.githubusercontent.com/55679683/202839791-8e91ff54-2e45-4a3b-9a41-0636a4fab25b.png)
-
 
 ## Overview
 
