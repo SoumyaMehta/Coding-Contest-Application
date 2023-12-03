@@ -1,17 +1,14 @@
-# Jukebox + Coding Contest Application
+# Jukebox Music Player
 
 ## Overview
-
-Using object-oriented design to build a jukebox music application and a coding contest application. 
+This app allows users to browse and play music from their playlist.
 
 Development Involved:
 *  Identifying and implementing the use cases, behaviors, and features of a Jukebox
-*  Designing and implementing the application logic of running a coding contest
 *  Implementing all the required layers step-by-step using test-driven development
 
   #### Conceptual Overview of a JukeBox: 
   ![crio-do-learn-portfolio-skm4898-ME_OBJECT_MODELING_V2-me-objectmodeling-milestone-1](https://github.com/SoumyaMehta/Object-Modeling/assets/69056406/7c8a743b-8886-4ed9-a6b5-50546ac0d0e7)
-
 
 
 # Pre-requisites
