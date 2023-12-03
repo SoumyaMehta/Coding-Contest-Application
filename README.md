@@ -4,8 +4,8 @@
 This app allows to run competitive coding contests like HackerRank. 
 
 Development Involved:
-*  Designing and implementing the application logic of running a coding contest
-*  Followed test-driven development to ensure code correctness and code coverage
+*  Designing and implementing the application logic of running a coding contest.
+*  Following test-driven development to ensure code correctness and code coverage.
 
   #### Conceptual Diagram:
 ![Untitled-1](https://github.com/SoumyaMehta/Coding-Contest-App/assets/69056406/6fd9fc4d-d40f-4809-9760-fe980597a8dd)
